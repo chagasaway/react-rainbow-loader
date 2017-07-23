@@ -9785,23 +9785,27 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       };return t.d(n, "a", n), n;
     }, t.o = function (e, t) {
       return Object.prototype.hasOwnProperty.call(e, t);
-    }, t.p = "", t(t.s = 3);
-  }([function (e, t, n) {
-    e.exports = n(8)();
-  }, function (e, t, n) {
-    var r = n(4);"string" == typeof r && (r = [[e.i, r, ""]]);n(10)(r, {});r.locals && (e.exports = r.locals);
-  }, function (t, n) {
+    }, t.p = "", t(t.s = 4);
+  }([function (t, n) {
     t.exports = e;
   }, function (e, t, n) {
     "use strict";
-    function r(e) {
-      return e && e.__esModule ? e : { default: e };
-    }function o(e, t) {
+    function r(e, t) {
       if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
-    }function i(e, t) {
+    }function o(e, t) {
       if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return !t || "object" != (typeof t === "undefined" ? "undefined" : _typeof(t)) && "function" != typeof t ? e : t;
-    }function u(e, t) {
+    }function i(e, t) {
       if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + (typeof t === "undefined" ? "undefined" : _typeof(t)));e.prototype = Object.create(t && t.prototype, { constructor: { value: e, enumerable: !1, writable: !0, configurable: !0 } }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t);
+    }function u(e, t) {
+      return function (n) {
+        function u() {
+          return r(this, u), o(this, (u.__proto__ || Object.getPrototypeOf(u)).apply(this, arguments));
+        }return i(u, n), a(u, [{ key: "render", value: function value() {
+            var n = this;return t.filter(function (e) {
+              return void 0 === n.props[e] || !1 === n.props[e];
+            }).length ? null : f.default.createElement(e, this.props);
+          } }]), u;
+      }(s.Component);
     }Object.defineProperty(t, "__esModule", { value: !0 });var a = function () {
       function e(e, t) {
         for (var n = 0; n < t.length; n++) {
@@ -9810,19 +9814,28 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
       }return function (t, n, r) {
         return n && e(t.prototype, n), r && e(t, r), t;
       };
-    }(),
-        s = n(2),
-        c = r(s),
-        f = n(0),
-        l = r(f);n(1);var p = function (e) {
-      function t(e) {
-        o(this, t);var n = i(this, (t.__proto__ || Object.getPrototypeOf(t)).call(this, e));return n.state = {}, n;
-      }return u(t, e), a(t, [{ key: "render", value: function value() {
-          var e = this.props.title;return c.default.createElement("h1", null, e);
-        } }]), t;
-    }(c.default.Component);t.default = p, p.propTypes = { title: l.default.string.isRequired }, p.defaultProps = { title: "Hello" };
+    }();t.default = u;var s = n(0),
+        f = function (e) {
+      return e && e.__esModule ? e : { default: e };
+    }(s);
   }, function (e, t, n) {
-    t = e.exports = n(5)(void 0), t.push([e.i, "h1{text-align:center}", ""]);
+    e.exports = n(9)();
+  }, function (e, t, n) {
+    var r = n(5);"string" == typeof r && (r = [[e.i, r, ""]]);n(11)(r, {});r.locals && (e.exports = r.locals);
+  }, function (e, t, n) {
+    "use strict";
+    function r(e) {
+      return e && e.__esModule ? e : { default: e };
+    }Object.defineProperty(t, "__esModule", { value: !0 });var o = n(0),
+        i = r(o),
+        u = n(2),
+        a = r(u);n(3);var s = n(1),
+        f = r(s),
+        c = function c() {
+      return i.default.createElement("div", { className: "RainbowLoader" });
+    };c.propTypes = { visible: a.default.bool.isRequired }, c.defaultProps = { visible: !0 }, t.default = (0, f.default)(c, ["visible"]);
+  }, function (e, t, n) {
+    t = e.exports = n(6)(void 0), t.push([e.i, ".RainbowLoader{height:40px;width:100%;left:0;right:0;top:0;bottom:0;position:absolute;background:linear-gradient(125deg,red,#ff7f00,#ff0,#0f0,#00f,indigo,#8b00ff);background-size:2000% 2000%;animation:effect 15s ease infinite}@keyframes effect{0%{background-position:0 85%}50%{background-position:100% 10%}to{background-position:0 85%}}", ""]);
   }, function (e, t) {
     function n(e, t) {
       var n = e[1] || "",
@@ -9861,19 +9874,19 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     "use strict";
     function r(e, t, n, r, i, u, a, s) {
       if (o(t), !e) {
-        var c;if (void 0 === t) c = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else {
-          var f = [n, r, i, u, a, s],
-              l = 0;c = new Error(t.replace(/%s/g, function () {
-            return f[l++];
-          })), c.name = "Invariant Violation";
-        }throw c.framesToPop = 1, c;
+        var f;if (void 0 === t) f = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else {
+          var c = [n, r, i, u, a, s],
+              l = 0;f = new Error(t.replace(/%s/g, function () {
+            return c[l++];
+          })), f.name = "Invariant Violation";
+        }throw f.framesToPop = 1, f;
       }
     }var o = function o(e) {};e.exports = r;
   }, function (e, t, n) {
     "use strict";
-    var r = n(6),
-        o = n(7),
-        i = n(9);e.exports = function () {
+    var r = n(7),
+        o = n(8),
+        i = n(10);e.exports = function () {
       function e(e, t, n, r, u, a) {
         a !== i && o(!1, "Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
       }function t() {
@@ -9891,11 +9904,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           o.refs++;for (var i = 0; i < o.parts.length; i++) {
             o.parts[i](r.parts[i]);
           }for (; i < r.parts.length; i++) {
-            o.parts.push(f(r.parts[i], t));
+            o.parts.push(c(r.parts[i], t));
           }
         } else {
           for (var u = [], i = 0; i < r.parts.length; i++) {
-            u.push(f(r.parts[i], t));
+            u.push(c(r.parts[i], t));
           }h[r.id] = { id: r.id, refs: 1, parts: u };
         }
       }
@@ -9906,25 +9919,25 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             u = o[1],
             a = o[2],
             s = o[3],
-            c = { css: u, media: a, sourceMap: s };n[i] ? n[i].parts.push(c) : t.push(n[i] = { id: i, parts: [c] });
+            f = { css: u, media: a, sourceMap: s };n[i] ? n[i].parts.push(f) : t.push(n[i] = { id: i, parts: [f] });
       }return t;
     }function i(e, t) {
-      var n = y(e.insertInto);if (!n) throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");var r = g[g.length - 1];if ("top" === e.insertAt) r ? r.nextSibling ? n.insertBefore(t, r.nextSibling) : n.appendChild(t) : n.insertBefore(t, n.firstChild), g.push(t);else {
+      var n = b(e.insertInto);if (!n) throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");var r = g[g.length - 1];if ("top" === e.insertAt) r ? r.nextSibling ? n.insertBefore(t, r.nextSibling) : n.appendChild(t) : n.insertBefore(t, n.firstChild), g.push(t);else {
         if ("bottom" !== e.insertAt) throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");n.appendChild(t);
       }
     }function u(e) {
       e.parentNode.removeChild(e);var t = g.indexOf(e);t >= 0 && g.splice(t, 1);
     }function a(e) {
-      var t = document.createElement("style");return e.attrs.type = "text/css", c(t, e.attrs), i(e, t), t;
+      var t = document.createElement("style");return e.attrs.type = "text/css", f(t, e.attrs), i(e, t), t;
     }function s(e) {
-      var t = document.createElement("link");return e.attrs.type = "text/css", e.attrs.rel = "stylesheet", c(t, e.attrs), i(e, t), t;
-    }function c(e, t) {
+      var t = document.createElement("link");return e.attrs.type = "text/css", e.attrs.rel = "stylesheet", f(t, e.attrs), i(e, t), t;
+    }function f(e, t) {
       Object.keys(t).forEach(function (n) {
         e.setAttribute(n, t[n]);
       });
-    }function f(e, t) {
+    }function c(e, t) {
       var n, r, o;if (t.singleton) {
-        var i = m++;n = b || (b = a(t)), r = l.bind(null, n, i, !1), o = l.bind(null, n, i, !0);
+        var i = m++;n = y || (y = a(t)), r = l.bind(null, n, i, !1), o = l.bind(null, n, i, !0);
       } else e.sourceMap && "function" == typeof URL && "function" == typeof URL.createObjectURL && "function" == typeof URL.revokeObjectURL && "function" == typeof Blob && "function" == typeof btoa ? (n = s(t), r = d.bind(null, n, t), o = function o() {
         u(n), n.href && URL.revokeObjectURL(n.href);
       }) : (n = a(t), r = p.bind(null, n), o = function o() {
@@ -9935,7 +9948,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         } else o();
       };
     }function l(e, t, n, r) {
-      var o = n ? "" : r.css;if (e.styleSheet) e.styleSheet.cssText = w(t, o);else {
+      var o = n ? "" : r.css;if (e.styleSheet) e.styleSheet.cssText = x(t, o);else {
         var i = document.createTextNode(o),
             u = e.childNodes;u[t] && e.removeChild(u[t]), u.length ? e.insertBefore(i, u[t]) : e.appendChild(i);
       }
@@ -9949,7 +9962,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }function d(e, t, n) {
       var r = n.css,
           o = n.sourceMap,
-          i = void 0 === t.convertToAbsoluteUrls && o;(t.convertToAbsoluteUrls || i) && (r = x(r)), o && (r += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(o)))) + " */");var u = new Blob([r], { type: "text/css" }),
+          i = void 0 === t.convertToAbsoluteUrls && o;(t.convertToAbsoluteUrls || i) && (r = w(r)), o && (r += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(o)))) + " */");var u = new Blob([r], { type: "text/css" }),
           a = e.href;e.href = URL.createObjectURL(u), a && URL.revokeObjectURL(a);
     }var h = {},
         v = function (e) {
@@ -9959,17 +9972,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     }(function () {
       return window && document && document.all && !window.atob;
     }),
-        y = function (e) {
+        b = function (e) {
       var t = {};return function (n) {
         return void 0 === t[n] && (t[n] = e.call(this, n)), t[n];
       };
     }(function (e) {
       return document.querySelector(e);
     }),
-        b = null,
+        y = null,
         m = 0,
         g = [],
-        x = n(11);e.exports = function (e, t) {
+        w = n(12);e.exports = function (e, t) {
       if ("undefined" != typeof DEBUG && DEBUG && "object" != (typeof document === "undefined" ? "undefined" : _typeof(document))) throw new Error("The style-loader cannot be used in a non-browser environment");t = t || {}, t.attrs = "object" == _typeof(t.attrs) ? t.attrs : {}, void 0 === t.singleton && (t.singleton = v()), void 0 === t.insertInto && (t.insertInto = "head"), void 0 === t.insertAt && (t.insertAt = "bottom");var n = o(e);return r(n, t), function (e) {
         for (var i = [], u = 0; u < n.length; u++) {
           var a = n[u],
@@ -9978,13 +9991,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           r(o(e), t);
         }for (var u = 0; u < i.length; u++) {
           var s = i[u];if (0 === s.refs) {
-            for (var c = 0; c < s.parts.length; c++) {
-              s.parts[c]();
+            for (var f = 0; f < s.parts.length; f++) {
+              s.parts[f]();
             }delete h[s.id];
           }
         }
       };
-    };var w = function () {
+    };var x = function () {
       var e = [];return function (t, n) {
         return e[t] = n, e.filter(Boolean).join("\n");
       };
@@ -10055,14 +10068,16 @@ var App = function (_React$Component) {
 	_createClass(App, [{
 		key: 'render',
 		value: function render() {
-			return _react2.default.createElement(_index2.default, { title: 'Hello World' });
+			return _react2.default.createElement(_index2.default, { visible: true });
 		}
 	}]);
 
 	return App;
 }(_react2.default.Component);
 
-_reactDom2.default.render(_react2.default.createElement(App, null), document.querySelector('#root'));
+var root = document.querySelector('#root');
+
+_reactDom2.default.render(_react2.default.createElement(App, null), root);
 
 /***/ }),
 /* 85 */
