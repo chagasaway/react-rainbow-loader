@@ -1,0 +1,18 @@
+.RainbowLoader {
+  height: 40px;
+  width: 100%;
+  left:0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(125deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF);
+  background-size: 2000% 2000%;
+  animation: effect 15s ease infinite;
+}
+
+@keyframes effect {
+    0%{ background-position:0% 85% }
+    50%{ background-position:100% 10% }
+    100%{ background-position:0% 85% }
+}
