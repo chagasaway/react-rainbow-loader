@@ -12,7 +12,9 @@ npm i react-rainbow-loader --save
 
 #### TODO
 
-- [ ] - cli similar to create-react-app
+- [ ] - Use CSS in JS
+- [ ] - Make component more flexible
+- [ ] - Reach 100% Tests Coverage
 
 *Found a bug or want to help? Issues and PR's are most welcome :)*
 
