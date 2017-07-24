@@ -1,10 +1,10 @@
 # [Rainbow Loader](https://chagasaway.github.io/react-rainbow-loader/) [![Build Status](https://travis-ci.org/chagasaway/react-rainbow-loader.svg?branch=master)](https://travis-ci.org/chagasaway/react-rainbow-loader)
 
-*A Instagram inspired simple rainbow loader indicator*
+*:rainbow: An Instagram inspired simple rainbow loader indicator*
 
 ### [Demo](https://chagasaway.github.io/react-rainbow-loader/)
 
-### Get Started
+### Install
 
 ```bash
 npm i react-rainbow-loader --save
@@ -12,11 +12,12 @@ npm i react-rainbow-loader --save
 
 #### TODO
 
-- [ ] - Use CSS in JS
-- [ ] - Make component more flexible
-- [ ] - Reach 100% Tests Coverage
+- :white_check_mark: - Make component more flexible
+- [] - Reach 100% tests coverage
+- [] - Improve browser support
+- [] - React Native support
 
-*Found a bug or want to help? Issues and PR's are most welcome :)*
+*Found a bug or want to help? Issues and PR's are welcome :smile:*
 
 ## License
 

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RainbowLoader Component should not render 1`] = `null`;
+
+exports[`RainbowLoader Component should not render 2`] = `null`;
+
+exports[`RainbowLoader Component should render with custom props 1`] = `
+<div
+  className="RainbowLoader"
+  style={
+    Object {
+      "animation": "rainbow 20s ease infinite",
+      "backgroundImage": "linear-gradient(125deg, #FFFFFF, #000000)",
+      "height": "100%",
+    }
+  }
+/>
+`;
+
+exports[`RainbowLoader Component should render with defaults 1`] = `
+<div
+  className="RainbowLoader"
+  style={
+    Object {
+      "animation": "rainbow 10s ease infinite",
+      "backgroundImage": "linear-gradient(125deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #0000FF, #4B0082, #8B00FF)",
+      "height": "5px",
+    }
+  }
+/>
+`;

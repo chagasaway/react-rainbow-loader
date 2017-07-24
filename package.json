@@ -1,7 +1,7 @@
 {
   "name": "react-rainbow-loader",
   "version": "0.0.1",
-  "description": "A Instagram inspired simple rainbow loader indicator",
+  "description": "An Instagram inspired simple rainbow loader indicator",
   "main": "dist/index.js",
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -18,12 +18,13 @@
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
     "jest": "^19.0.2",
+    "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-test-renderer": "^15.6.1",
     "style-loader": "^0.16.1",
     "webpack": "^2.4.1",
-    "webpack-dev-server": "^2.4.2",
-    "prop-types": "^15.5.8"
+    "webpack-dev-server": "^2.4.2"
   },
   "scripts": {
     "server": "./node_modules/.bin/webpack-dev-server --hot --inline",
@@ -33,6 +34,7 @@
     "deploy": "npm run pre-deploy && git subtree push --prefix demo origin gh-pages",
     "start": "npm run build && npm run server",
     "test": "jest",
+    "test-snapshot-update": "jest --updateSnapshot",
     "test-coverage": "yarn run jest -- --coverage"
   },
   "jest": {
@@ -48,6 +50,11 @@
   "peerDependencies": {
     "react-dom": "^15.4.2"
   },
+  "keywords": [
+    "react-component",
+    "loader",
+    "rainbow-loader"
+  ],
   "repository": "https://github.com/chagasaway/react-rainbow-loader",
   "author": "Fellipe Chagas",
   "license": "MIT"

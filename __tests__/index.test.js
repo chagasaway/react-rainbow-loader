@@ -1,17 +1,36 @@
-'use strict';
-
 import React from 'react';
-import ReactDOM from 'react-dom';
-import TestUtils from 'react-dom/test-utils';
 import RainbowLoader from '../src/index';
+import renderer from 'react-test-renderer';
 
 describe('RainbowLoader Component', () => {
-  it('should render correctly', () => {
-    const component = TestUtils.renderIntoDocument(
+  it('should not render', () => {
+    const tree = renderer.create(
       <RainbowLoader />
-    );
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 
-    const loaderNode = ReactDOM.findDOMNode(component);
-    expect(loaderNode.className).toEqual('RainbowLoader');
+  it('should not render', () => {
+    const tree = renderer.create(
+      <RainbowLoader visible={false} />
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should render with defaults', () => {
+    const tree = renderer.create(
+      <RainbowLoader visible={true} />
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+
+  it('should render with custom props', () => {
+    const colors = ['#FFFFFF', '#000000'];
+    const tree = renderer.create(
+      <RainbowLoader
+        visible={true} height='100%' duration={20} colors={colors}
+      />
+    ).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

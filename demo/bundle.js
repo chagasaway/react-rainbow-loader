@@ -9803,7 +9803,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         }return i(u, n), a(u, [{ key: "render", value: function value() {
             var n = this;return t.filter(function (e) {
               return void 0 === n.props[e] || !1 === n.props[e];
-            }).length ? null : f.default.createElement(e, this.props);
+            }).length ? null : c.default.createElement(e, this.props);
           } }]), u;
       }(s.Component);
     }Object.defineProperty(t, "__esModule", { value: !0 });var a = function () {
@@ -9815,7 +9815,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         return n && e(t.prototype, n), r && e(t, r), t;
       };
     }();t.default = u;var s = n(0),
-        f = function (e) {
+        c = function (e) {
       return e && e.__esModule ? e : { default: e };
     }(s);
   }, function (e, t, n) {
@@ -9826,16 +9826,38 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     "use strict";
     function r(e) {
       return e && e.__esModule ? e : { default: e };
-    }Object.defineProperty(t, "__esModule", { value: !0 });var o = n(0),
-        i = r(o),
-        u = n(2),
-        a = r(u);n(3);var s = n(1),
-        f = r(s),
-        c = function c() {
-      return i.default.createElement("div", { className: "RainbowLoader" });
-    };c.propTypes = { visible: a.default.bool.isRequired }, c.defaultProps = { visible: !0 }, t.default = (0, f.default)(c, ["visible"]);
+    }function o(e, t) {
+      if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
+    }function i(e, t) {
+      if (!e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");return !t || "object" != (typeof t === "undefined" ? "undefined" : _typeof(t)) && "function" != typeof t ? e : t;
+    }function u(e, t) {
+      if ("function" != typeof t && null !== t) throw new TypeError("Super expression must either be null or a function, not " + (typeof t === "undefined" ? "undefined" : _typeof(t)));e.prototype = Object.create(t && t.prototype, { constructor: { value: e, enumerable: !1, writable: !0, configurable: !0 } }), t && (Object.setPrototypeOf ? Object.setPrototypeOf(e, t) : e.__proto__ = t);
+    }Object.defineProperty(t, "__esModule", { value: !0 });var a = function () {
+      function e(e, t) {
+        for (var n = 0; n < t.length; n++) {
+          var r = t[n];r.enumerable = r.enumerable || !1, r.configurable = !0, "value" in r && (r.writable = !0), Object.defineProperty(e, r.key, r);
+        }
+      }return function (t, n, r) {
+        return n && e(t.prototype, n), r && e(t, r), t;
+      };
+    }(),
+        s = n(0),
+        c = r(s),
+        f = n(2),
+        l = r(f);n(3);var p = n(1),
+        d = r(p),
+        h = function h(e) {
+      return { height: e.height, animation: "rainbow " + e.duration + "s ease infinite", backgroundImage: "linear-gradient(125deg, " + e.colors.join(", ") + ")" };
+    },
+        b = function (e) {
+      function t() {
+        return o(this, t), i(this, (t.__proto__ || Object.getPrototypeOf(t)).apply(this, arguments));
+      }return u(t, e), a(t, [{ key: "render", value: function value() {
+          var e = h(this.props);return c.default.createElement("div", { className: "RainbowLoader", style: e });
+        } }]), t;
+    }(s.Component);b.propTypes = { visible: l.default.bool.isRequired, height: l.default.string, duration: l.default.number, colors: l.default.array }, b.defaultProps = { height: "5px", duration: 10, colors: ["#FF0000", "#FF7F00", "#FFFF00", "#00FF00", "#0000FF", "#4B0082", "#8B00FF"] }, t.default = (0, d.default)(b, ["visible"]);
   }, function (e, t, n) {
-    t = e.exports = n(6)(void 0), t.push([e.i, ".RainbowLoader{height:40px;width:100%;left:0;right:0;top:0;bottom:0;position:absolute;background:linear-gradient(125deg,red,#ff7f00,#ff0,#0f0,#00f,indigo,#8b00ff);background-size:2000% 2000%;animation:effect 15s ease infinite}@keyframes effect{0%{background-position:0 85%}50%{background-position:100% 10%}to{background-position:0 85%}}", ""]);
+    t = e.exports = n(6)(void 0), t.push([e.i, ".RainbowLoader{width:100%;left:0;right:0;top:0;bottom:0;position:absolute;background-size:2000% 2000%}@keyframes rainbow{0%{background-position:0 85%}50%{background-position:100% 10%}to{background-position:0 85%}}", ""]);
   }, function (e, t) {
     function n(e, t) {
       var n = e[1] || "",
@@ -9874,12 +9896,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
     "use strict";
     function r(e, t, n, r, i, u, a, s) {
       if (o(t), !e) {
-        var f;if (void 0 === t) f = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else {
-          var c = [n, r, i, u, a, s],
-              l = 0;f = new Error(t.replace(/%s/g, function () {
-            return c[l++];
-          })), f.name = "Invariant Violation";
-        }throw f.framesToPop = 1, f;
+        var c;if (void 0 === t) c = new Error("Minified exception occurred; use the non-minified dev environment for the full error message and additional helpful warnings.");else {
+          var f = [n, r, i, u, a, s],
+              l = 0;c = new Error(t.replace(/%s/g, function () {
+            return f[l++];
+          })), c.name = "Invariant Violation";
+        }throw c.framesToPop = 1, c;
       }
     }var o = function o(e) {};e.exports = r;
   }, function (e, t, n) {
@@ -9904,11 +9926,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           o.refs++;for (var i = 0; i < o.parts.length; i++) {
             o.parts[i](r.parts[i]);
           }for (; i < r.parts.length; i++) {
-            o.parts.push(c(r.parts[i], t));
+            o.parts.push(f(r.parts[i], t));
           }
         } else {
           for (var u = [], i = 0; i < r.parts.length; i++) {
-            u.push(c(r.parts[i], t));
+            u.push(f(r.parts[i], t));
           }h[r.id] = { id: r.id, refs: 1, parts: u };
         }
       }
@@ -9919,23 +9941,23 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
             u = o[1],
             a = o[2],
             s = o[3],
-            f = { css: u, media: a, sourceMap: s };n[i] ? n[i].parts.push(f) : t.push(n[i] = { id: i, parts: [f] });
+            c = { css: u, media: a, sourceMap: s };n[i] ? n[i].parts.push(c) : t.push(n[i] = { id: i, parts: [c] });
       }return t;
     }function i(e, t) {
-      var n = b(e.insertInto);if (!n) throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");var r = g[g.length - 1];if ("top" === e.insertAt) r ? r.nextSibling ? n.insertBefore(t, r.nextSibling) : n.appendChild(t) : n.insertBefore(t, n.firstChild), g.push(t);else {
+      var n = v(e.insertInto);if (!n) throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");var r = g[g.length - 1];if ("top" === e.insertAt) r ? r.nextSibling ? n.insertBefore(t, r.nextSibling) : n.appendChild(t) : n.insertBefore(t, n.firstChild), g.push(t);else {
         if ("bottom" !== e.insertAt) throw new Error("Invalid value for parameter 'insertAt'. Must be 'top' or 'bottom'.");n.appendChild(t);
       }
     }function u(e) {
       e.parentNode.removeChild(e);var t = g.indexOf(e);t >= 0 && g.splice(t, 1);
     }function a(e) {
-      var t = document.createElement("style");return e.attrs.type = "text/css", f(t, e.attrs), i(e, t), t;
+      var t = document.createElement("style");return e.attrs.type = "text/css", c(t, e.attrs), i(e, t), t;
     }function s(e) {
-      var t = document.createElement("link");return e.attrs.type = "text/css", e.attrs.rel = "stylesheet", f(t, e.attrs), i(e, t), t;
-    }function f(e, t) {
+      var t = document.createElement("link");return e.attrs.type = "text/css", e.attrs.rel = "stylesheet", c(t, e.attrs), i(e, t), t;
+    }function c(e, t) {
       Object.keys(t).forEach(function (n) {
         e.setAttribute(n, t[n]);
       });
-    }function c(e, t) {
+    }function f(e, t) {
       var n, r, o;if (t.singleton) {
         var i = m++;n = y || (y = a(t)), r = l.bind(null, n, i, !1), o = l.bind(null, n, i, !0);
       } else e.sourceMap && "function" == typeof URL && "function" == typeof URL.createObjectURL && "function" == typeof URL.revokeObjectURL && "function" == typeof Blob && "function" == typeof btoa ? (n = s(t), r = d.bind(null, n, t), o = function o() {
@@ -9948,7 +9970,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         } else o();
       };
     }function l(e, t, n, r) {
-      var o = n ? "" : r.css;if (e.styleSheet) e.styleSheet.cssText = x(t, o);else {
+      var o = n ? "" : r.css;if (e.styleSheet) e.styleSheet.cssText = O(t, o);else {
         var i = document.createTextNode(o),
             u = e.childNodes;u[t] && e.removeChild(u[t]), u.length ? e.insertBefore(i, u[t]) : e.appendChild(i);
       }
@@ -9965,14 +9987,14 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           i = void 0 === t.convertToAbsoluteUrls && o;(t.convertToAbsoluteUrls || i) && (r = w(r)), o && (r += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(o)))) + " */");var u = new Blob([r], { type: "text/css" }),
           a = e.href;e.href = URL.createObjectURL(u), a && URL.revokeObjectURL(a);
     }var h = {},
-        v = function (e) {
+        b = function (e) {
       var t;return function () {
         return void 0 === t && (t = e.apply(this, arguments)), t;
       };
     }(function () {
       return window && document && document.all && !window.atob;
     }),
-        b = function (e) {
+        v = function (e) {
       var t = {};return function (n) {
         return void 0 === t[n] && (t[n] = e.call(this, n)), t[n];
       };
@@ -9983,7 +10005,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
         m = 0,
         g = [],
         w = n(12);e.exports = function (e, t) {
-      if ("undefined" != typeof DEBUG && DEBUG && "object" != (typeof document === "undefined" ? "undefined" : _typeof(document))) throw new Error("The style-loader cannot be used in a non-browser environment");t = t || {}, t.attrs = "object" == _typeof(t.attrs) ? t.attrs : {}, void 0 === t.singleton && (t.singleton = v()), void 0 === t.insertInto && (t.insertInto = "head"), void 0 === t.insertAt && (t.insertAt = "bottom");var n = o(e);return r(n, t), function (e) {
+      if ("undefined" != typeof DEBUG && DEBUG && "object" != (typeof document === "undefined" ? "undefined" : _typeof(document))) throw new Error("The style-loader cannot be used in a non-browser environment");t = t || {}, t.attrs = "object" == _typeof(t.attrs) ? t.attrs : {}, void 0 === t.singleton && (t.singleton = b()), void 0 === t.insertInto && (t.insertInto = "head"), void 0 === t.insertAt && (t.insertAt = "bottom");var n = o(e);return r(n, t), function (e) {
         for (var i = [], u = 0; u < n.length; u++) {
           var a = n[u],
               s = h[a.id];s.refs--, i.push(s);
@@ -9991,13 +10013,13 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
           r(o(e), t);
         }for (var u = 0; u < i.length; u++) {
           var s = i[u];if (0 === s.refs) {
-            for (var f = 0; f < s.parts.length; f++) {
-              s.parts[f]();
+            for (var c = 0; c < s.parts.length; c++) {
+              s.parts[c]();
             }delete h[s.id];
           }
         }
       };
-    };var x = function () {
+    };var O = function () {
       var e = [];return function (t, n) {
         return e[t] = n, e.filter(Boolean).join("\n");
       };
