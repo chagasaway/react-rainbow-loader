@@ -1,4 +1,4 @@
-# [Rainbow Loader](https://chagasaway.github.io/react-rainbow-loader/) [![Build Status](https://travis-ci.org/chagasaway/react-rainbow-loader.svg?branch=master)](https://travis-ci.org/chagasaway/react-rainbow-loader)
+# [Rainbow Loader](https://chagasaway.github.io/react-rainbow-loader/) [![Build Status](https://travis-ci.org/chagasaway/react-rainbow-loader.svg?branch=master)](https://travis-ci.org/chagasaway/react-rainbow-loader) [![codecov](https://codecov.io/gh/chagasaway/react-rainbow-loader/branch/master/graph/badge.svg)](https://codecov.io/gh/chagasaway/react-rainbow-loader)
 
 *:rainbow: An Instagram inspired simple rainbow loader indicator*
 
