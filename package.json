@@ -33,11 +33,13 @@
     "pre-deploy": "./node_modules/.bin/webpack --config=webpack.config.js",
     "deploy": "npm run pre-deploy && git subtree push --prefix demo origin gh-pages",
     "start": "npm run build && npm run server",
-    "test": "jest",
+    "test": "jest && ./node_modules/.bin/codecov",
     "test-snapshot-update": "jest --updateSnapshot",
     "test-coverage": "yarn run jest -- --coverage"
   },
   "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true,
     "unmockedModulePathPatterns": [
       "/node_modules/react",
       "/node_modules/react-dom",
